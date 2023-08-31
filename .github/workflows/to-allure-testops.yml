@@ -46,7 +46,6 @@ jobs:
         run: |
           chmod +x exec-tests.sh
           allurectl watch -- pytest ./tests --alluredir=${ALLURE_RESULTS} --capture=no
-          printenv
         env:
           TEST_ENDPOINT: ${{ github.event.inputs.TEST_ENDPOINT }}
           TEST_BROWSER: ${{ github.event.inputs.TEST_BROWSER }}
