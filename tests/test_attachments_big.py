@@ -11,7 +11,7 @@ from conftest import github_issues
 @allure.story("smoking pytest")
 @allure.feature("sending attachments")
 @allure.title("Sending 8 Mb JPG attachments")
-@github_issues("rattus-aristarchus/py-allurectl-tests#3")
+@github_issues("rattus-aristarchus/py-allurectl-tests#2")
 def test_attach_bigimage():
     print("After this step we'll have a pause for 10 seconds")
     with allure.step("Sending big 8 megabytes JPG attach"):
