@@ -5,7 +5,7 @@ import time
 import allure
 from allure import attachment_type
 
-from tests.conftest import github_issues
+from conftest import github_issues
 
 @allure.suite("cloud instance")
 @allure.story("smoking pytest")
