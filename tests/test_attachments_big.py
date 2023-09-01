@@ -5,10 +5,13 @@ import time
 import allure
 from allure import attachment_type
 
+from tests.conftest import github_issues
+
 @allure.suite("cloud instance")
 @allure.story("smoking pytest")
 @allure.feature("sending attachments")
 @allure.title("Sending 8 Mb JPG attachments")
+@github_issues("rattus-aristarchus/py-allurectl-tests#3")
 def test_attach_bigimage():
     print("After this step we'll have a pause for 10 seconds")
     with allure.step("Sending big 8 megabytes JPG attach"):
