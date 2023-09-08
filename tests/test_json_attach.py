@@ -4,10 +4,7 @@ from allure import attachment_type
 import time
 import os
 
-@allure.suite("cloud instance")
-@allure.feature("sending attachments")
-@allure.story("sending JSON attachments")
-@allure.title("Sending JSON attachments")
+
 def test_json_attach():
     print("sending JSON attachment")
     time.sleep(5)

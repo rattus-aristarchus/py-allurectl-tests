@@ -4,10 +4,6 @@ import os
 import allure
 from allure import attachment_type
 
-@allure.suite("cloud instance")
-@allure.story("smoking pytest")
-@allure.feature("sending attachments")
-@allure.title("Sending 10 Kbytes attachment")
 def test_attach_smallimage():
 
     current_folder = os.getcwd()

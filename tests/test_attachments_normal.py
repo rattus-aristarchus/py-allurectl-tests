@@ -5,11 +5,6 @@ import allure
 from allure import attachment_type
 
 
-@allure.suite("cloud instance")
-@allure.story("smoking pytest")
-@allure.feature("sending attachments")
-@allure.title("Sending 200+ Kbytes attachment")
-@allure.id
 def test_attach_normalimage():
     allure.id()
     with allure.step("Sending normal 240 kbytes JPG attach"):

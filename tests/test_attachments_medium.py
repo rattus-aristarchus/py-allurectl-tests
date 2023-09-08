@@ -5,10 +5,6 @@ import allure
 from allure import attachment_type
 
 
-@allure.suite("cloud instance")
-@allure.story("smoking pytest")
-@allure.feature("sending attachments")
-@allure.title("Sending 3 Mb attachment")
 def test_attach_mediumimage():
     with allure.step("Sending medium 3 megabytes JPG attach"):
         allure.attach.file(os.path.join("resources", "medium-image.jpg"), name="3 Mb JPG example", attachment_type=attachment_type.JPG)
