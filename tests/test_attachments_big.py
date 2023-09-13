@@ -25,6 +25,7 @@ def test_attach_bigimage():
     time.sleep(5)
     with allure.step("CSV attach"):
         allure.attach.file(os.path.join("resources", "big-table.csv"), name="9,2 Mb CSV example", attachment_type=attachment_type.CSV)
+        assert "" == "this test needs to fail"
     time.sleep(10)
     with allure.step("JSON attach"):
         allure.attach(json.dumps({"first": 1, "second": 2}, indent=2),name="JSON example", attachment_type=attachment_type.JSON)
