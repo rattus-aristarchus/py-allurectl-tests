@@ -33,3 +33,5 @@ def test_attach_smallimage():
 def test_attach_smalltext():
     with allure.step("txt attach"):
         allure.attach.file(os.path.join("resources", "chekhov.txt"), name="letter to the neighbour", attachment_type=attachment_type.TEXT)
+    with allure.step("the demo needs some test failures"):
+        assert 1 == 2
