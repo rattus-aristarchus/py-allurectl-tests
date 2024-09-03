@@ -7,6 +7,7 @@ on:
       - "*"
 
 env:
+  ALLURE_ENDPOINT: "https://testing.testops.cloud/"
   ALLURE_TESTPLAN_PATH: "./testplan.json"
   ALLURE_RESULTS: "allure-results"
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
