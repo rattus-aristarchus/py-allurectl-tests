@@ -4,7 +4,7 @@ import os
 import allure
 from allure import attachment_type
 
-
+@allure.tag("IO")
 @allure.suite("cloud instance")
 @allure.story("smoking pytest")
 @allure.feature("sending attachments")

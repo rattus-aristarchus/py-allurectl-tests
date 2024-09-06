@@ -7,6 +7,7 @@ from allure import attachment_type
 
 from conftest import github_issues
 
+@allure.tag("IO")
 @allure.suite("cloud instance")
 @allure.story("smoking pytest")
 @allure.feature("sending attachments")
